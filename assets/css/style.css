@@ -188,10 +188,18 @@ footer > a {
   text-decoration: underline;
 }
 
-.headshot {
-  /* width: 100%; */
+.bride-headshot, .groom-headshot {
   width: 250px;
-  border: 5px solid #6C3753;
+  box-shadow: 0 5px 23px 0 #6C3753;
+  margin: 0 1.5em;
+}
+
+.bride-headshot {
+  float: right;
+}
+
+.groom-headshot {
+  float: left;
 }
 
 .bride-title, .groom-title {
@@ -266,4 +274,9 @@ footer {
 
 footer .fa-heart {
   color: #f77380;
+}
+
+#map { 
+  width: 100%;
+  height: 300px;
 }

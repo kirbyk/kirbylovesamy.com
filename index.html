@@ -12,7 +12,6 @@
     <link rel='stylesheet' href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.12.3/mapbox-gl.css'>
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:300'>
     <link rel='stylesheet' href='/assets/css/style.css'>
-    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.12.3/mapbox-gl.js'></script>
   </head>
   <body>
     <header class='main-header'>
@@ -56,12 +55,10 @@
           <h2 class='section-title'>Bride & Groom</h2>
           <div class='row bride-and-groom-section'>
             <div class='col-xs-12 col-sm-6'>
-              <img src='/assets/img/amy.jpg' alt='rick-headshot' class='img-circle headshot' />
-              <div class='bride-title'>The Bride</div>
+              <img src='/assets/img/amy.jpg' alt='rick-headshot' class='img-circle bride-headshot' />
             </div>
             <div class='col-xs-12 col-sm-6'>
-              <img src='/assets/img/kirby.jpg' alt='rick-headshot' class='img-circle headshot' />
-              <div class='groom-title'>The Groom</div>
+              <img src='/assets/img/kirby.jpg' alt='rick-headshot' class='img-circle groom-headshot' />
             </div>
           </div>
           <div class='row'>
@@ -77,15 +74,6 @@
           <h2 class='section-title'>Location</h2>
           <div class='row'>
             <div id='map'></div>
-            <script>
-mapboxgl.accessToken = 'pk.eyJ1Ijoia2lyYnkiLCJhIjoiY2lqZzd0d3FlMDE5d3RobTV0NW9hNjM4OCJ9.a_Ro4knFLUPjaQG3cTx3fw';
-var map = new mapboxgl.Map({
-  container: 'map', // container id
-  style: 'mapbox://styles/mapbox/streets-v8', //stylesheet location
-    center: [-74.50, 40], // starting position
-    zoom: 9 // starting zoom
-});
-            </script>
           </div>
         </div>
       </section>
@@ -133,6 +121,7 @@ var map = new mapboxgl.Map({
 
     <script src='/bower_components/jquery/dist/jquery.min.js'></script>
     <script src='/bower_components/bootstrap/dist/js/bootstrap.min.js'></script>
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.12.3/mapbox-gl.js'></script>
     <script src='/assets/js/main.js'></script>
   </body>
 </html>
