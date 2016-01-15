@@ -9,8 +9,10 @@
 
     <link rel='stylesheet' href='/bower_components/bootstrap/dist/css/bootstrap.min.css'>
     <link rel='stylesheet' href='/bower_components/font-awesome/css/font-awesome.min.css'>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet' href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.12.3/mapbox-gl.css'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:300'>
     <link rel='stylesheet' href='/assets/css/style.css'>
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.12.3/mapbox-gl.js'></script>
   </head>
   <body>
     <header class='main-header'>
@@ -74,6 +76,16 @@
         <div class='container'>
           <h2 class='section-title'>Location</h2>
           <div class='row'>
+            <div id='map'></div>
+            <script>
+mapboxgl.accessToken = 'pk.eyJ1Ijoia2lyYnkiLCJhIjoiY2lqZzd0d3FlMDE5d3RobTV0NW9hNjM4OCJ9.a_Ro4knFLUPjaQG3cTx3fw';
+var map = new mapboxgl.Map({
+  container: 'map', // container id
+  style: 'mapbox://styles/mapbox/streets-v8', //stylesheet location
+    center: [-74.50, 40], // starting position
+    zoom: 9 // starting zoom
+});
+            </script>
           </div>
         </div>
       </section>

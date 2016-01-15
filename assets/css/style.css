@@ -1,3 +1,35 @@
+@font-face {
+  font-family: 'HoeflerTitling-HTF-BdSC';
+  src: url("../fonts/HoeflerTitling-HTF-BdSC.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+}
+
+@font-face {
+  font-family: 'HoeflerTitling-HTF-LtSC';
+  src: url("../fonts/HoeflerTitling-HTF-LtSC.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+}
+
+@font-face {
+  font-family: 'HoeflerTitling-HTF-SmSwash';
+  src: url("../fonts/HoeflerTitling-HTF-SmSwash.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+}
+
+@font-face {
+  font-family: 'KirbyLovesAmy';
+  src: url("../fonts/KirbyLovesAmy.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+}
+
 .container {
   max-width: 61em;
 }
