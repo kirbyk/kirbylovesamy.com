@@ -8,6 +8,7 @@
   border-radius: 0;
   position: fixed;
   width: 100%;
+  z-index: 10;
 
   background-color: rgba(255, 255, 255, .8);
 }
@@ -88,7 +89,7 @@
 }
 
 section {
-  padding: 3em 0;
+  padding: 5em 0;
 
   color: #fff;
 }
@@ -158,28 +159,23 @@ footer > a {
 .headshot {
   /* width: 100%; */
   width: 250px;
-  border: 5px solid #fefbf7;
+  border: 5px solid #6C3753;
 }
 
 .bride-title, .groom-title {
   font-size: 3em;
   font-family: 'HoeflerTitling-HTF-BdSC';
-  margin-top: .75em;
-  color: #fefbf7;
+  margin-top: .25em;
+  color: #6C3753;
+  letter-spacing: -.05em;
 }
 
-
-.bride-title, .groom-title {
-  font-size: 3em;
-  font-family: 'HoeflerTitling-HTF-BdSC';
-  margin-top: .75em;
-}
-
-.bride-bio, .groom-bio {
-  margin-top: 1em;
-  font-size: 1.6em;
+.bride-bio {
+  margin-top: 2em;
+  font-size: 1.5em;
+  line-height: 2em;
   font-family: 'Open Sans', sans-serif;
-  color: #272822;
+  color: #fefbf7;
   text-align: center;
 }
 
