@@ -1,0 +1,241 @@
+.container {
+  max-width: 61em;
+}
+
+.navbar {
+  margin-bottom: 0;
+  border: none;
+  border-radius: 0;
+  position: fixed;
+  width: 100%;
+
+  background-color: rgba(255, 255, 255, .8);
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  float: none;
+}
+
+.navbar .navbar-nav > li > a {
+  padding: 1.5em;
+  
+  color: #000;
+  font-size: 1.2em;
+  font-family: 'HoeflerTitling-HTF-BdSC';
+  text-transform: uppercase;
+}
+
+.main-header {
+  height: 100vh;
+
+  background-image: url(/assets/img/hero.jpeg);
+  background-position: center center;
+  background-size: cover;
+}
+
+.black {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.header-text {
+  position: relative;
+  top: 40%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+
+  color: white;
+  text-align: center;
+}
+
+.header-title {
+  margin-top: 0;
+
+  font-size: 8em;
+  font-family: 'HoeflerTitling-HTF-SmSwash';
+}
+
+.header-and {
+  margin-top: 1em;
+
+  font-size: 2em;
+  font-family: 'HoeflerTitling-HTF-LtSC';
+  text-transform: uppercase;
+}
+
+.header-subtitle {
+  margin-top: 1em;
+  font-size: 2.5em;
+  font-family: 'HoeflerTitling-HTF-BdSC';
+}
+
+@media (max-width: 480px) {
+  .header-title {
+    font-size: 2em;
+  }
+
+  .header-subtitle {
+    font-size: 1em;
+  }
+}
+
+section {
+  padding: 3em 0;
+
+  color: #fff;
+}
+
+.section-title {
+  margin-top: 0;
+  padding-bottom: 50px;
+
+  text-align: center;
+  font-size: 3em;
+  font-family: 'KirbyLovesAmy';
+  color: #fefbf7;
+}
+
+.section-content {
+  font-size: 1.4em;
+  font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.section-content a {
+  color: #fff;
+}
+
+.section-content a:hover {
+  text-decoration: underline;
+}
+
+.bride-and-groom-section {
+  text-align: center;
+}
+
+#bride-and-groom-section {
+  min-height: 400px;
+  background-color: #AB8CAB;
+}
+
+#location-section {
+  min-height: 400px;
+  background-color: #BAB4B2;
+}
+
+#photos-section {
+  background-color: #8D6180;
+}
+
+#registry-section {
+  min-height: 400px;
+
+  background-color: #BAB4B2;
+}
+
+#rsvp-section {
+  background-color: #6C3753;
+}
+
+footer {
+  background-color: #BAB4B2;
+  color: #fefbf7;
+}
+
+footer > a {
+  color: #fefbf7;
+  text-decoration: underline;
+}
+
+.headshot {
+  /* width: 100%; */
+  width: 250px;
+  border: 5px solid #fefbf7;
+}
+
+.bride-title, .groom-title {
+  font-size: 3em;
+  font-family: 'HoeflerTitling-HTF-BdSC';
+  margin-top: .75em;
+  color: #fefbf7;
+}
+
+
+.bride-title, .groom-title {
+  font-size: 3em;
+  font-family: 'HoeflerTitling-HTF-BdSC';
+  margin-top: .75em;
+}
+
+.bride-bio, .groom-bio {
+  margin-top: 1em;
+  font-size: 1.6em;
+  font-family: 'Open Sans', sans-serif;
+  color: #272822;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  /* .headshot { */
+  /*   width: 50%; */
+  /*   margin-bottom: 25px; */
+  /* } */
+}
+
+.contact-input {
+  padding: 25px;
+  margin: 25px 0;
+}
+
+.contact-input:first-child {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.contact-submit {
+  padding: 15px;
+  width: 200px;
+}
+
+.contact-notification {
+  display: none;
+  margin-bottom: 0;
+}
+
+@media (max-width: 480px) {
+  .contact-input {
+    margin: 25px 0;
+  }
+
+  .contact-input:first-child {
+    margin-top: 25px;
+  }
+
+  .contact-submit {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+.button-wrapper {
+  text-align: center;
+}
+
+footer {
+  padding: 2em;
+
+  text-align: center;
+  font-size: 1.2em;
+}
+
+footer .fa-heart {
+  color: #f77380;
+}
