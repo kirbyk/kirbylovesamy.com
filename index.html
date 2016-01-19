@@ -5,12 +5,17 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 
-    <title>The Official Blog of Rich Sanchez</title>
+    <title>Amy + Kirby</title>
 
-    <link rel='stylesheet' href='/bower_components/bootstrap/dist/css/bootstrap.min.css'>
-    <link rel='stylesheet' href='/bower_components/font-awesome/css/font-awesome.min.css'>
-    <link rel='stylesheet' href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.12.3/mapbox-gl.css'>
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:300'>
+    <link rel='icon' type='image/png' href='/assets/img/favicon.png' />
+
+    <link rel='stylesheet' href='/bower_components/bootstrap/dist/css/bootstrap.min.css' />
+    <link rel='stylesheet' href='/bower_components/font-awesome/css/font-awesome.min.css' />
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:300' />
+
+    <link rel='stylesheet' href='/bower_components/photoswipe/dist/photoswipe.css' />
+    <link rel='stylesheet' href='/bower_components/photoswipe/dist/default-skin/default-skin.css' />
+
     <link rel='stylesheet' href='/assets/css/style.css'>
   </head>
   <body>
@@ -63,7 +68,7 @@
           </div>
           <div class='row'>
             <div class='col-xs-10 col-xs-offset-1'>
-              <div class='bride-bio'>Amy and Kirby started dating while they attended Marion High School. Now they are both Seniors at Purdue University graduating in May. Amy is studing Speech Language and Hearing Sciences while Kirby studies Computer Science. After graduation Amy will begin attending graduate school to become a Speech Language Pathologist. Kirby will join a software company likely as a Software Engineer. The two of them will either be moving to New York City or the San Francisco Bay Area.</div>
+              <div class='bride-and-groom-bio'>Amy and Kirby started dating while they attended Marion High School. Now they are both Seniors at Purdue University graduating in May. Amy is studing Speech Language and Hearing Sciences while Kirby studies Computer Science. After graduation Amy will begin attending graduate school to become a Speech Language Pathologist. Kirby will join a software company likely as a Software Engineer. The two of them will either be moving to New York City or the San Francisco Bay Area.</div>
             </div>
           </div>
         </div>
@@ -73,23 +78,90 @@
         <div class='container'>
           <h2 class='section-title'>Location</h2>
           <div class='row'>
-            <div id='map'></div>
+            <div class='col-xs-12 col-sm-6'>
+              Info
+            </div>
+            <div class='col-xs-12 col-sm-6'>
+              Map
+            </div>
           </div>
         </div>
       </section>
 
       <section id='photos-section'>
-        <div class='container'>
+        <div class='container test'>
           <h2 class='section-title'>Photos</h2>
           <div class='row'>
+	    <a href='/assets/img/gallery/01.jpg' data-width='1500' data-height='1000' data-index='1' class='gallery-img'>
+	      <img src='/assets/img/gallery/01.jpg' alt='' />
+	    </a>
+	    <a href='/assets/img/gallery/02.jpg' data-width='1500' data-height='1000' data-index='2' class='gallery-img'>
+	      <img src='/assets/img/gallery/02.jpg' alt='' />
+	    </a>
+	    <a href='/assets/img/gallery/03.jpg' data-width='1000' data-height='1500' data-index='3' class='gallery-img'>
+	      <img src='/assets/img/gallery/03.jpg' alt='' />
+	    </a>
+	    <a href='/assets/img/gallery/04.jpg' data-width='1000' data-height='1500' data-index='4' class='gallery-img'>
+	      <img src='/assets/img/gallery/04.jpg' alt='' />
+	    </a>
+	    <a href='/assets/img/gallery/05.jpg' data-width='1000' data-height='1500' data-index='5' class='gallery-img'>
+	      <img src='/assets/img/gallery/05.jpg' alt='' />
+	    </a>
+	    <a href='/assets/img/gallery/06.jpg' data-width='1000' data-height='1500' data-index='6' class='gallery-img'>
+	      <img src='/assets/img/gallery/06.jpg' alt='' />
+	    </a>
+	    <a href='/assets/img/gallery/07.jpg' data-width='1500' data-height='1000' data-index='7' class='gallery-img'>
+	      <img src='/assets/img/gallery/07.jpg' alt='' />
+	    </a>
+	    <a href='/assets/img/gallery/08.jpg' data-width='1500' data-height='1000' data-index='8' class='gallery-img'>
+	      <img src='/assets/img/gallery/08.jpg' alt='' />
+	    </a>
           </div>
+        </div>
+
+        <div class='pswp' tabindex='-1' role='dialog' aria-hidden='true'>
+            <div class='pswp__bg'></div>
+            <div class='pswp__scroll-wrap'>
+                <div class='pswp__container'>
+                  <div class='pswp__item'></div>
+                  <div class='pswp__item'></div>
+                  <div class='pswp__item'></div>
+                </div>
+                <div class='pswp__ui pswp__ui--hidden'>
+                  <div class='pswp__top-bar'>
+                    <div class='pswp__counter'></div>
+                    <button class='pswp__button pswp__button--close' title='Close (Esc)'></button>
+                    <button class='pswp__button pswp__button--zoom' title='Zoom in/out'></button>
+                    <div class='pswp__preloader'>
+                      <div class='pswp__preloader__icn'>
+                        <div class='pswp__preloader__cut'>
+                          <div class='pswp__preloader__donut'></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class='pswp__button pswp__button--arrow--left' title='Previous (arrow left)'></button>
+                  <button class='pswp__button pswp__button--arrow--right' title='Next (arrow right)'></button>
+                </div>
+            </div>
         </div>
       </section>
 
       <section id='registry-section'>
         <div class='container'>
           <h2 class='section-title'>Registry</h2>
+          <h3 class='registry-subtitle'>We have registries at the following stores:</h3>
           <div class='row'>
+            <div class='col-xs-12 col-sm-6'>
+              <a href='http://www.bedbathandbeyond.com/store/giftregistry/view_registry_guest.jsp?pwsToken=&eventType=Wedding&registryId=542906396' target='_blank'>
+                <img src='/assets/img/bed-bath-and-beyond.png' alt='' class='registry-logo' />
+              </a>
+            </div>
+            <div class='col-xs-12 col-sm-6'>
+              <a href='http://www.amazon.com/gp/registry/registry.html?ie=UTF8&id=33X86V0OUHW9O&type=wedding' target='_blank'>
+                <img src='/assets/img/amazon.png' alt='' class='registry-logo' />
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -121,7 +193,10 @@
 
     <script src='/bower_components/jquery/dist/jquery.min.js'></script>
     <script src='/bower_components/bootstrap/dist/js/bootstrap.min.js'></script>
-    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.12.3/mapbox-gl.js'></script>
+
+    <script src='/bower_components/photoswipe/dist/photoswipe.js'></script>
+    <script src='/bower_components/photoswipe/dist/photoswipe-ui-default.js'></script>
+
     <script src='/assets/js/main.js'></script>
   </body>
 </html>

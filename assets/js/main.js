@@ -1,13 +1,6 @@
 $(function() {
   registerNavButtons();
-
-  mapboxgl.accessToken = 'pk.eyJ1Ijoia2lyYnkiLCJhIjoiY2lqZzd0d3FlMDE5d3RobTV0NW9hNjM4OCJ9.a_Ro4knFLUPjaQG3cTx3fw';
-  var map = new mapboxgl.Map({
-    container: 'map', // container id
-    style: 'mapbox://styles/mapbox/streets-v8', //stylesheet location
-    center: [-74.50, 40], // starting position
-    zoom: 9 // starting zoom
-  });
+  initPhotoGallery();
 });
 
 function registerNavButtons() {
@@ -29,3 +22,45 @@ function clickAndScroll(link, section) {
     return false;
   });
 }
+
+function initPhotoGallery() {
+  $('.gallery-img').each(function(index, el) {
+    $(el).click(onThumbnailClick);
+  });
+}
+
+function onThumbnailClick(e) {
+  e.preventDefault();
+
+  var index = parseInt($(e.target.parentNode).data('index'), 10);
+
+  openPhotoSwipe(index);
+
+  return false;
+}
+
+function getItems() {
+  return $('.gallery-img').map(function(index, el) {
+    return {
+      src: $(el).attr('href'),
+      w: parseInt($(el).data('width'), 10),
+      h: parseInt($(el).data('height'), 10)
+    };
+  });
+}
+
+function openPhotoSwipe(index) {
+  var pswpElement = $('.pswp')[0];
+
+  var items = getItems();
+
+  var options = {
+    index: index,
+    captionEl: false,
+    fullscreenEl: false,
+    shareEl: false
+  };
+
+  gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
+  gallery.init();
+};
