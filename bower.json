@@ -13,8 +13,8 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "~3.3.5",
     "font-awesome": "~4.4.0",
-    "photoswipe": "~4.1.1"
+    "photoswipe": "~4.1.1",
+    "bootstrap-sass": "bootstrap-sass-official#~3.3.6"
   }
 }

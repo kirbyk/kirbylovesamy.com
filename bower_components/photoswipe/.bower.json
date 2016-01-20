@@ -43,6 +43,5 @@
   },
   "_source": "git://github.com/dimsemenov/PhotoSwipe.git",
   "_target": "~4.1.1",
-  "_originalSource": "photoswipe",
-  "_direct": true
+  "_originalSource": "photoswipe"
 }

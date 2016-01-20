@@ -9,14 +9,13 @@
 
     <link rel='icon' type='image/png' href='/assets/img/favicon.png' />
 
-    <link rel='stylesheet' href='/bower_components/bootstrap/dist/css/bootstrap.min.css' />
     <link rel='stylesheet' href='/bower_components/font-awesome/css/font-awesome.min.css' />
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:300' />
 
     <link rel='stylesheet' href='/bower_components/photoswipe/dist/photoswipe.css' />
     <link rel='stylesheet' href='/bower_components/photoswipe/dist/default-skin/default-skin.css' />
 
-    <link rel='stylesheet' href='/assets/css/style.css'>
+    <link rel='stylesheet' href='/assets/css/main.css'>
   </head>
   <body>
     <header class='main-header'>
@@ -67,7 +66,7 @@
             </div>
           </div>
           <div class='row'>
-            <div class='col-xs-10 col-xs-offset-1'>
+            <div class='col-xs-8 col-xs-offset-2'>
               <div class='bride-and-groom-bio'>Amy and Kirby started dating while they attended Marion High School. Now they are both Seniors at Purdue University graduating in May. Amy is studing Speech Language and Hearing Sciences while Kirby studies Computer Science. After graduation Amy will begin attending graduate school to become a Speech Language Pathologist. Kirby will join a software company likely as a Software Engineer. The two of them will either be moving to New York City or the San Francisco Bay Area.</div>
             </div>
           </div>
@@ -79,10 +78,26 @@
           <h2 class='section-title'>Location</h2>
           <div class='row'>
             <div class='col-xs-12 col-sm-6'>
-              Info
+              <div class='location-wrapper'>
+                <h3 class='location-heading'>Ceremony – 3:30pm</h3>
+                <div class='location-subheading'>
+                  Meshingomesia Golf &amp; Social Club
+                  <br />
+                  2225 Lagro Road
+                  <br />
+                  Marion, IN 46952
+                </div>
+
+                <h3 class='location-heading'>Reception – 4:30pm</h3>
+                <div class='location-subheading'>
+                  Also at the Meshingomesia Golf &amp; Social Club
+                </div>
+              </div>
             </div>
             <div class='col-xs-12 col-sm-6'>
-              Map
+              <a href='https://www.google.com/maps/place/Meshingomesia+Golf+%26+Social+Club/@40.5920615,-85.6628489,977m/data=!3m1!1e3!4m2!3m1!1s0x8814544aedd068e1:0x7ebba868722d76f5!6m1!1e1' target='_blank'>
+                <img src='https://api.mapbox.com/v4/mapbox.emerald/pin-l-heart+333(-85.661,40.592)/-85.66,40.592,15/400x500.png?access_token=pk.eyJ1Ijoia2lyYnkiLCJhIjoiY2lqZzd0d3FlMDE5d3RobTV0NW9hNjM4OCJ9.a_Ro4knFLUPjaQG3cTx3fw' alt='Map'/>
+              </a>
             </div>
           </div>
         </div>
@@ -171,16 +186,21 @@
           <h2 class='section-title'>RSVP</h2>
             <form>
               <div class='row'>
-                <div class='col-xs-12 col-sm-6'>
+                <div class='col-xs-12 col-sm-4 col-sm-offset-2'>
                   <input type='text' label='Name' class='form-control contact-input' name='first' placeholder='First Name *'>
                 </div>
-                <div class='col-xs-12 col-sm-6'>
+                <div class='col-xs-12 col-sm-4'>
                   <input type='text' label='Name' class='form-control contact-input' name='last' placeholder='Last Name *'>
                 </div>
               </div>
-              <input type='text' class='form-control contact-input' name='subject' placeholder='Subject *'>
-              <textarea class='form-control contact-input message' name='message' placeholder='Your Message *'></textarea>
-              <input class='btn btn-default contact-submit' type='submit' value='Submit'>
+              <br />
+              <div class='row'>
+                <div class='col-xs-8 col-xs-offset-2'>
+                  <input type='text' class='form-control contact-input' name='subject' placeholder='Subject *'>
+                  <textarea class='form-control contact-input message' name='message' placeholder='Your Message *'></textarea>
+                  <input class='btn btn-default contact-submit' type='submit' value='Submit'>
+                </div>
+              </div>
             </form>
           </div>
         </div>
