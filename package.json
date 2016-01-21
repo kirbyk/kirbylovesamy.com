@@ -5,7 +5,8 @@
   "main": "gulpfile.js",
   "scripts": {
     "clean": "rm -rf dist",
-    "deploy": "npm run clean; cp -r src dist && cd dist && git init && git checkout -b gh-pages && git add . && git commit -m 'Update site.' && git push git@github.com:kirbyk/kirbylovesamy.com gh-pages --force"
+    "build": "npm run clean; gulp",
+    "deploy": "npm run build && cd dist && git init && git checkout -b gh-pages && git add . && git commit -m 'Update site.' && git push git@github.com:kirbyk/kirbylovesamy.com gh-pages --force"
   },
   "repository": {
     "type": "git",
