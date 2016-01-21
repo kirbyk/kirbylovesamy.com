@@ -16,6 +16,12 @@ var config = {
   jsDestDir: './dist/assets/js'
 }
 
+gulp.task('cname', function() {
+  return gulp
+    .src('./CNAME')
+    .pipe(gulp.dest('dist'));
+});
+
 gulp.task('copy', function() {
   return gulp
     .src('./src/index.html')
@@ -69,4 +75,4 @@ gulp.task('sass:watch', function() {
   gulp.watch('./src/styles/*.scss', ['sass']);
 });
 
-gulp.task('default', ['copy', 'assets', 'icons', 'scripts', 'sass']);
+gulp.task('default', ['cname', 'copy', 'assets', 'icons', 'scripts', 'sass']);
