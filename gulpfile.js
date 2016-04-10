@@ -23,9 +23,9 @@ gulp.task('cname', function() {
     .pipe(gulp.dest('dist'));
 });
 
-gulp.task('copy', function() {
+gulp.task('html', function() {
   return gulp
-    .src('./src/index.html')
+    .src('./src/*.html')
     .pipe(gulp.dest('dist'));
 });
 
@@ -80,11 +80,12 @@ function delayedReload() {
 }
 
 gulp.task('watch', function() {
+  gulp.watch('./src/*.html', ['html', delayedReload]);
   gulp.watch('./src/styles/*.scss', ['sass', delayedReload]);
   gulp.watch('./src/scripts/*.js', ['scripts', delayedReload]);
 });
 
-gulp.task('serve', ['cname', 'copy', 'assets', 'icons', 'scripts', 'sass'], function() {
+gulp.task('serve', ['cname', 'assets', 'icons', 'html', 'scripts', 'sass'], function() {
   // TODO: fix this hack
   setTimeout(function() {
     browserSync.init({
