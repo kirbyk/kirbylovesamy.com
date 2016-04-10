@@ -27,6 +27,7 @@
     "node-normalize-scss": "^1.0.3"
   },
   "devDependencies": {
+    "browser-sync": "^2.11.2",
     "gulp-concat": "^2.6.0"
   }
 }

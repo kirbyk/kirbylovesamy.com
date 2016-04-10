@@ -6,6 +6,7 @@ var bourbon = require('node-bourbon');
 var neat = require('node-neat');
 var normalize = require('node-normalize-scss');
 var concat = require('gulp-concat');
+var browserSync = require('browser-sync').create();
 
 
 var config = {
@@ -71,8 +72,34 @@ gulp.task('sass', function() {
     .pipe(gulp.dest(config.cssDestDir));
 });
 
-gulp.task('sass:watch', function() {
-  gulp.watch('./src/styles/*.scss', ['sass']);
+// TODO: fix this hack
+function delayedReload() {
+  setTimeout(function() {
+    browserSync.reload();
+  }, 1000);
+}
+
+gulp.task('watch', function() {
+  gulp.watch('./src/styles/*.scss', ['sass', delayedReload]);
+  gulp.watch('./src/scripts/*.js', ['scripts', delayedReload]);
 });
 
-gulp.task('default', ['cname', 'copy', 'assets', 'icons', 'scripts', 'sass']);
+gulp.task('serve', ['cname', 'copy', 'assets', 'icons', 'scripts', 'sass'], function() {
+  // TODO: fix this hack
+  setTimeout(function() {
+    browserSync.init({
+      ghostMode: {
+        clicks: false,
+        forms: false,
+        scroll: false,
+      },
+      server: {
+        baseDir: './dist',
+      },
+    });
+  }, 1000);
+
+  gulp.start(['watch']);
+});
+
+gulp.task('default', ['serve']);
