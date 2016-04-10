@@ -7,6 +7,10 @@
 @import 'variables';
 @import 'fonts';
 
+.center {
+  text-align: center;
+}
+
 .vertical-third {
   position: relative;
   top: 33vh;
@@ -276,7 +280,9 @@ footer > a:focus {
 
 .contact-submit {
   padding: 15px;
-  width: 200px;
+  width: 100%;
+  font-family: 'HoeflerTitling-HTF-BdSC';
+  text-transform: uppercase;
 }
 
 .contact-notification {
