@@ -44,9 +44,10 @@ gulp.task('icons', function() {
 gulp.task('scripts', function() {
   return gulp.src([
       config.bowerDir + '/jquery/dist/jquery.js',
-      config.bowerDir + '/bootstrap/dist/js/bootstrap.js',
+      config.bowerDir + '/bootstrap-sass/assets/javascripts/bootstrap.js',
       config.bowerDir + '/photoswipe/dist/photoswipe.js',
       config.bowerDir + '/photoswipe/dist/photoswipe-ui-default.js',
+      config.bowerDir + '/fuse.js/src/fuse.min.js',
       config.jsPath
     ])
     .pipe(concat('main.js'))
