@@ -77,7 +77,7 @@ function delayedReload() {
 gulp.task('watch', function() {
   gulp.watch('./src/*.html', ['html', delayedReload]);
   gulp.watch('./src/styles/*.scss', ['sass', delayedReload]);
-  gulp.watch('./src/scripts/*.js', ['scripts', delayedReload]);
+  gulp.watch('./src/scripts/*', ['scripts', delayedReload]);
 });
 
 gulp.task('serve', ['cname', 'assets', 'icons', 'html', 'scripts', 'sass'], function() {

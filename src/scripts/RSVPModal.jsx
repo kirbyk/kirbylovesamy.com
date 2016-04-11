@@ -6,22 +6,23 @@ export default class RSVPModal extends React.Component {
     console.log(this.props.attendee);
     return (
       <div>
-        <h3 className='center'>
-          Wedding Invitation for:
-          <span id='attendee'></span>
+        <h3 className='center primary-font'>
+          { this.props.attendee.formatted }
         </h3>
 
         <p className='center'>
-          Please modify the attendees below to reflect your RSVP.
+          Please modify the attendee(s) below to reflect your RSVP.
         </p>
 
         <div className='row'>
           <div className='col-xs-8 col-xs-offset-2'>
-            <ul className="list-group">
-              <li className="list-group-item">
-                <span className="badge">Unknown</span>
-                Ben Alderfer
-              </li>
+            <ul className='list-group'>
+              {this.props.attendee.people.map((person, index) => (
+                <li className='list-group-item' key={index}>
+                  <span className='badge'>Unknown</span>
+                  { person }
+                </li>
+              ))}
             </ul>
           </div>
         </div>
