@@ -1,6 +1,19 @@
+import $ from 'jquery';
+window.jQuery = $;
+import Fuse from 'fuse.js';
+import PhotoSwipe from 'photoswipe';
+import invitees from './invitees.js';
+import RSVPModal from './RSVPModal.jsx';
+import React from 'react';
+import ReactDOM from 'react-dom';
+require('bootstrap');
+
+
+
 $(function() {
   registerNavButtons();
   initPhotoGallery();
+  registerRSVP();
 });
 
 function registerNavButtons() {
@@ -61,6 +74,30 @@ function openPhotoSwipe(index) {
     shareEl: false
   };
 
+  // TODO: Fix PhotoSwipeUI_Default
   gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
   gallery.init();
-};
+}
+
+function registerRSVP() {
+  var fuse = new Fuse(invitees, { keys: ['people'] });
+
+  $('#rsvp-lookup').click(function() {
+    var attendee = $('#rsvp-name').val();
+
+    var matchingInvitees = fuse.search(attendee);
+
+    if (matchingInvitees < 1) {
+      console.log('error');
+      // TODO: display error message
+      return;
+    }
+
+    ReactDOM.render(
+      React.createElement(RSVPModal, { attendee: matchingInvitees[0] }),
+      document.getElementById('rsvp-modal-body')
+    );
+
+    $('#rsvp-modal').modal();
+  });
+}

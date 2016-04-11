@@ -65,7 +65,7 @@
               <div class='bride-and-groom-bio'>
                 Amy and Kirby started dating while they attended Marion High
                 School. Now they are both Seniors at Purdue University
-                graduating in May. Amy is studing Speech Language and Hearing
+                graduating in May. Amy is studying Speech Language and Hearing
                 Sciences while Kirby studies Computer Science. After graduation
                 Amy and Kirby will move to NYC. Amy will begin attending
                 Hofstra University to become a Speech Language Pathologist.
@@ -183,22 +183,17 @@
       <section id='rsvp-section'>
         <div class='container'>
           <h2 class='section-title'>RSVP</h2>
-            <form>
-              <div class='row'>
-                <div class='col-xs-6 col-xs-offset-3'>
-                  <input type='text' class='form-control contact-input' name='name' placeholder='Name'>
-                </div>
+            <div class='row'>
+              <div class='col-xs-4 col-xs-offset-4'>
+                <input class='form-control contact-input' id='rsvp-name' type='text' name='name' placeholder='Name'>
               </div>
-              <br />
-              <div class='row'>
-                <div class='col-xs-3 col-xs-offset-3 center'>
-                  <input class='btn btn-default contact-submit' type='submit' value='Delighted to attend'>
-                </div>
-                <div class='col-xs-3 center'>
-                  <input class='btn btn-default contact-submit' type='submit' value='Regretfully Decline'>
-                </div>
+            </div>
+            <br />
+            <div class='row'>
+              <div class='col-xs-4 col-xs-offset-4 center'>
+                <input class='btn btn-default contact-submit' id='rsvp-lookup' type='submit' value='Lookup Invitation'>
               </div>
-            </form>
+            </div>
           </div>
         </div>
       </section>
@@ -208,6 +203,21 @@
       Made with <i class='fa fa-heart'></i> by <a href='http://kirby.xyz/' target='_blank'>The Groom</a>.
     </footer>
 
-    <script src='/assets/js/main.js'></script>
+    <script src='/assets/js/bundle.js'></script>
   </body>
 </html>
+
+<div class='modal fade' id='rsvp-modal' tabindex='-1' role='dialog'>
+  <div class='modal-dialog' role='document'>
+    <div class='modal-content'>
+      <div class='modal-header'>
+        <button type='button' class='close' data-dismiss='modal' aria-label='Close'>
+          <span aria-hidden='true'>&times;</span>
+        </button>
+        <h4 class='modal-title'>Confirm RSVP</h4>
+      </div>
+      <div class='modal-body' id='rsvp-modal-body'>
+      </div>
+    </div>
+  </div>
+</div>

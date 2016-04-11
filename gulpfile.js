@@ -7,6 +7,7 @@ var neat = require('node-neat');
 var normalize = require('node-normalize-scss');
 var concat = require('gulp-concat');
 var browserSync = require('browser-sync').create();
+var webpack = require('gulp-webpack');
 
 
 var config = {
@@ -42,15 +43,8 @@ gulp.task('icons', function() {
 });
 
 gulp.task('scripts', function() {
-  return gulp.src([
-      config.bowerDir + '/jquery/dist/jquery.js',
-      config.bowerDir + '/bootstrap-sass/assets/javascripts/bootstrap.js',
-      config.bowerDir + '/photoswipe/dist/photoswipe.js',
-      config.bowerDir + '/photoswipe/dist/photoswipe-ui-default.js',
-      config.bowerDir + '/fuse.js/src/fuse.min.js',
-      config.jsPath
-    ])
-    .pipe(concat('main.js'))
+  return gulp.src('./src/scripts/main.js')
+    .pipe(webpack(require('./webpack.config.js')))
     .pipe(gulp.dest(config.jsDestDir));
 });
 

@@ -16,6 +16,7 @@
     "font-awesome": "~4.4.0",
     "photoswipe": "~4.1.1",
     "bootstrap-sass": "bootstrap-sass-official#~3.3.6",
-    "fuse.js": "fuse#^2.2.0"
+    "fuse.js": "fuse#^2.2.0",
+    "react": "^15.0.1"
   }
 }
