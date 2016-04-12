@@ -189,10 +189,24 @@ section {
   background-color: #333;
 }
 
+#photos-section .col-md-4, #photos-section .col-md-2 {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.gallery-img {
+  display: inline-block;
+  overflow: hidden;
+  max-height: 25rem;
+  margin: 3px 0;
+}
+
 .gallery-img > img {
-  max-width: 36rem;
-  max-height: 24rem;
-  margin: .75rem;
+  width: 100%;
+}
+
+.portrait-img > img {
+  transform: translateY(-4rem);
 }
 
 #registry-section {
@@ -351,6 +365,10 @@ footer .fa-heart {
     font-size: 3rem;
     line-height: 5rem;
   }
+
+  .portrait-img {
+    max-height: 26rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -383,11 +401,18 @@ footer .fa-heart {
     font-size: 2.5rem;
   }
 
+  .portrait-img {
+    max-height: 29rem;
+  }
 }
 
 @media (max-height: 736px) {
   .header-text {
     top: 50rem;
+  }
+
+  section {
+    padding: 4rem 0;
   }
 
   .section-title {
@@ -417,6 +442,10 @@ footer .fa-heart {
   .location-subheading {
     font-size: 1.5rem;
   }
+
+  .portrait-img {
+    max-height: 25rem;
+  }
 }
 
 @media (max-height: 667px) {
@@ -436,6 +465,9 @@ footer .fa-heart {
     font-size: 2rem;
   }
 
+  .portrait-img {
+    max-height: 21rem;
+  }
 }
 
 @media (max-height: 568px) {
