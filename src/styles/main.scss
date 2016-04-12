@@ -227,6 +227,10 @@ section {
   margin-bottom: 5rem;
 }
 
+.registry-subtitle > br {
+  display: none;
+}
+
 .registry-logo {
   width: 30rem;
 }
@@ -404,6 +408,19 @@ footer .fa-heart {
   .portrait-img {
     max-height: 29rem;
   }
+
+  .registry-subtitle {
+    margin-bottom: 3rem;
+  }
+
+  .registry-subtitle > br {
+    display: inherit;
+  }
+
+  .registry-logo {
+    width: 20rem;
+    padding: 2rem;
+  }
 }
 
 @media (max-height: 736px) {
@@ -467,6 +484,10 @@ footer .fa-heart {
 
   .portrait-img {
     max-height: 21rem;
+  }
+
+  .registry-subtitle {
+    font-size: 2.5rem;
   }
 }
 
