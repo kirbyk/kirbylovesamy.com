@@ -391,6 +391,7 @@ footer .fa-heart {
   }
 
   .section-title {
+    font-size: 4rem;
     padding-bottom: 2rem;
   }
 
@@ -401,6 +402,20 @@ footer .fa-heart {
   .bride-and-groom-bio {
     font-size: 1.9rem;
     line-height: 3rem;
+  }
+
+  .location-wrapper {
+    float: none;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .location-heading {
+    font-size: 2.5rem;
+  }
+
+  .location-subheading {
+    font-size: 1.5rem;
   }
 }
 
@@ -445,6 +460,5 @@ footer .fa-heart {
   .header-text {
     top: 35rem;
   }
-
 }
 
