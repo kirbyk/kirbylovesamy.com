@@ -67,7 +67,7 @@ html {
   height: 100vh;
 
   background-image: url(/assets/img/hero.jpeg);
-  background-position: -15rem -5rem;
+  background-position: -10rem -5rem;
   background-size: cover;
 }
 
@@ -336,6 +336,21 @@ footer .fa-heart {
     background-position: -33rem 0;
     background-size: 140rem;
   }
+
+  .section-title {
+    padding-bottom: 3rem;
+  }
+
+  .bride-headshot, .groom-headshot {
+    width: 20rem;
+    margin: 0;
+  }
+
+  .bride-and-groom-bio {
+    margin-top: 4rem;
+    font-size: 3rem;
+    line-height: 5rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -367,11 +382,25 @@ footer .fa-heart {
   .header-subtitle {
     font-size: 2.5rem;
   }
+
 }
 
 @media (max-height: 736px) {
   .header-text {
     top: 50rem;
+  }
+
+  .section-title {
+    padding-bottom: 2rem;
+  }
+
+  .bride-headshot, .groom-headshot {
+    width: 15rem;
+  }
+
+  .bride-and-groom-bio {
+    font-size: 1.9rem;
+    line-height: 3rem;
   }
 }
 
@@ -391,6 +420,7 @@ footer .fa-heart {
   .header-subtitle {
     font-size: 2rem;
   }
+
 }
 
 @media (max-height: 568px) {
@@ -401,11 +431,20 @@ footer .fa-heart {
   .header-text {
     top: 40rem;
   }
+
+  .bride-headshot, .groom-headshot {
+    width: 10rem;
+  }
+
+  .bride-and-groom-bio {
+    margin-top: 3rem;
+  }
 }
 
 @media (max-height: 480px) {
   .header-text {
     top: 35rem;
   }
+
 }
 
