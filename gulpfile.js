@@ -80,7 +80,9 @@ gulp.task('watch', function() {
   gulp.watch('./src/scripts/*', ['scripts', delayedReload]);
 });
 
-gulp.task('serve', ['cname', 'assets', 'icons', 'html', 'scripts', 'sass'], function() {
+gulp.task('build', ['cname', 'assets', 'icons', 'html', 'scripts', 'sass']);
+
+gulp.task('serve', ['build'], function() {
   // TODO: fix this hack
   setTimeout(function() {
     browserSync.init({
@@ -98,4 +100,4 @@ gulp.task('serve', ['cname', 'assets', 'icons', 'html', 'scripts', 'sass'], func
   gulp.start(['watch']);
 });
 
-gulp.task('default', ['serve']);
+gulp.task('default', ['build']);
