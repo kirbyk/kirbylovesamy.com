@@ -47,10 +47,10 @@
 }
 
 .navbar .navbar-nav > li > a {
-  padding: 1.5em;
+  padding: 2.2rem;
   
   color: #000;
-  font-size: 1.2em;
+  font-size: 1.6rem;
   font-family: 'HoeflerTitling-HTF-BdSC';
   text-transform: uppercase;
 }
@@ -87,52 +87,52 @@
 .header-title {
   margin-top: 0;
 
-  font-size: 8em;
+  font-size: 11rem;
   font-family: 'HoeflerTitling-HTF-SmSwash';
 }
 
 .header-and {
-  margin-top: 1em;
+  margin-top: 3rem;
 
-  font-size: 2em;
+  font-size: 3rem;
   font-family: 'HoeflerTitling-HTF-LtSC';
   text-transform: uppercase;
 }
 
 .header-subtitle {
-  margin-top: 1em;
-  font-size: 2.5em;
+  margin-top: 3rem;
+  font-size: 3.5rem;
   font-family: 'HoeflerTitling-HTF-BdSC';
 }
 
-@media (max-width: 480px) {
-  .header-title {
-    font-size: 2em;
-  }
-
-  .header-subtitle {
-    font-size: 1em;
-  }
-}
+// @media (max-width: 480px) {
+//   .header-title {
+//     font-size: 2em;
+//   }
+//
+//   .header-subtitle {
+//     font-size: 1em;
+//   }
+// }
 
 section {
-  padding: 5em 0;
+  padding: 7rem 0;
 
   color: #fff;
 }
 
 .section-title {
   margin-top: 0;
-  padding-bottom: 50px;
+  padding-bottom: 5rem;
 
   text-align: center;
-  font-size: 3em;
+  font-size: 4.5rem;
   font-family: 'KirbyLovesAmy';
   color: #fefbf7;
 }
 
 .section-content {
-  font-size: 1.4em;
+  font-size: 1.4rem;
   font-weight: 300;
   font-family: 'Open Sans', sans-serif;
 }
@@ -150,13 +150,13 @@ section {
 }
 
 #bride-and-groom-section {
-  min-height: 400px;
+  // min-height: 400px;
   background-color: #AB8CAB;
   /* background-image: url(/assets/img/flourish.png); */
 }
 
 #location-section {
-  min-height: 400px;
+  // min-height: 400px;
 
   color: #333;
   background-image: url('https://api.mapbox.com/v4/mapbox.light/pin-l+AC8BAC(-85.661,40.592)/-85.65,40.592,14/1280x800.png?access_token=pk.eyJ1Ijoia2lyYnkiLCJhIjoiY2lqZzd0d3FlMDE5d3RobTV0NW9hNjM4OCJ9.a_Ro4knFLUPjaQG3cTx3fw');
@@ -174,37 +174,31 @@ section {
   text-align: left;
   float: right;
   background-color: #fff;
-  padding: 3em;
+  padding: 4rem;
 }
 
 .location-heading {
   font-family: 'HoeflerTitling-HTF-BdSC';
-  font-size: 2em;
+  font-size: 2.75rem;
 }
 
 .location-subheading {
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.25em;
+  font-size: 1.75rem;
 }
 
 #photos-section {
   background-color: #333;
 }
 
-.test {
-  max-width: 84em;
-}
-
 .gallery-img > img {
-  /* max-width: 400px; */
-  /* max-height: 266px; */
-  max-width: 380px;
-  max-height: 253px;
-  margin: 7px;
+  max-width: 36rem;
+  max-height: 24rem;
+  margin: .75rem;
 }
 
 #registry-section {
-  min-height: 400px;
+  // min-height: 400px;
 
   background-color: #fff;
   text-align: center;
@@ -218,11 +212,11 @@ section {
 .registry-subtitle {
   color: #333;
   font-family: 'Open Sans', sans-serif;
-  margin-bottom: 50px;
+  margin-bottom: 5rem;
 }
 
 .registry-logo {
-  width: 300px;
+  width: 30rem;
 }
 
 #rsvp-section {
@@ -234,7 +228,7 @@ footer {
   color: #fefbf7;
   background-color: #333;
   font-family: 'Open Sans', sans-serif;
-  letter-spacing: 2px;
+  letter-spacing: .175rem;
 }
 
 footer > a {
@@ -250,9 +244,9 @@ footer > a:focus {
 }
 
 .bride-headshot, .groom-headshot {
-  width: 250px;
+  width: 25rem;
   box-shadow: 0 5px 23px 0 #6C3753;
-  margin: 0 1.5em;
+  margin: 0 2rem;
 }
 
 .bride-headshot {
@@ -264,10 +258,10 @@ footer > a:focus {
 }
 
 .bride-and-groom-bio {
-  margin-top: 2em;
-  font-size: 1.5em;
+  margin-top: 5rem;
+  font-size: 2.1rem;
   text-shadow: 2px 2px 10px #6C3753;
-  line-height: 2em;
+  line-height: 4rem;
   font-family: 'Open Sans', sans-serif;
   color: #fefbf7;
   text-align: center;
@@ -280,52 +274,47 @@ footer > a:focus {
   /* } */
 }
 
-.contact-input {
-  padding: 25px;
-  margin: 25px 0;
+.rsvp-input {
+  padding: 2.5rem;
+  margin: 3rem 0;
 }
 
-.contact-input:first-child {
+.rsvp-input:first-child {
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.contact-submit {
-  padding: 15px;
+.rsvp-submit {
+  padding: 1.5rem;
   width: 100%;
   font-family: 'HoeflerTitling-HTF-BdSC';
   text-transform: uppercase;
 }
 
-.contact-notification {
-  display: none;
-  margin-bottom: 0;
-}
-
-@media (max-width: 480px) {
-  .contact-input {
-    margin: 25px 0;
-  }
-
-  .contact-input:first-child {
-    margin-top: 25px;
-  }
-
-  .contact-submit {
-    margin-left: 0;
-    width: 100%;
-  }
-}
+// @media (max-width: 480px) {
+//   .contact-input {
+//     margin: 25px 0;
+//   }
+//
+//   .contact-input:first-child {
+//     margin-top: 25px;
+//   }
+//
+//   .contact-submit {
+//     margin-left: 0;
+//     width: 100%;
+//   }
+// }
 
 .button-wrapper {
   text-align: center;
 }
 
 footer {
-  padding: 2em;
+  padding: 3.25rem;
 
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1.75rem;
 }
 
 footer .fa-heart {
