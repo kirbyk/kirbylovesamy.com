@@ -2,12 +2,12 @@ import $ from 'jquery';
 window.jQuery = $;
 import Fuse from 'fuse.js';
 import PhotoSwipe from 'photoswipe';
+import PhotoSwipeUI_Default from 'photoswipe/dist/photoswipe-ui-default';
 import invitees from './invitees.js';
 import RSVPModal from './RSVPModal.jsx';
 import React from 'react';
 import ReactDOM from 'react-dom';
 require('bootstrap');
-
 
 
 $(function() {
@@ -74,8 +74,7 @@ function openPhotoSwipe(index) {
     shareEl: false
   };
 
-  // TODO: Fix PhotoSwipeUI_Default
-  gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
+  var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
   gallery.init();
 }
 
