@@ -85,7 +85,7 @@ function registerRSVP() {
     concatPeople: invitee.people.join(' ')
   }));
 
-  var fuse = new Fuse(denormalized, { keys: ['concatPeople'] });
+  var fuse = new Fuse(denormalized, { keys: ['concatPeople'], tokenize: true });
 
   $('#rsvp-lookup').click(() => launchRSVPModal(fuse));
   $('#rsvp-name').enter(() => launchRSVPModal(fuse));
@@ -103,7 +103,7 @@ jQuery.fn.enter = function(callback) {
 };
 
 function launchRSVPModal(fuse) {
-  var attendee = $('#rsvp-name').val();
+  var attendee = $('#rsvp-name').val().replace('and', '');
 
   var matchingInvitees = fuse.search(attendee);
 
