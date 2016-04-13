@@ -70,7 +70,13 @@ export default class RSVPModal extends React.Component {
 
         <div className='row'>
           <div className='col-xs-6 col-xs-offset-3 center'>
-            <input className='btn btn-default rsvp-submit' id='rsvp-submit' type='submit' value='Submit RSVP' onClick={ () => this.submit() } />
+            <input
+              className='btn btn-default rsvp-submit'
+              id='rsvp-submit'
+              type='submit'
+              value='Submit RSVP'
+              onClick={ () => this.submit() }
+            />
           </div>
         </div>
       </div>
