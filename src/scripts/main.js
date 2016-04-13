@@ -87,22 +87,36 @@ function registerRSVP() {
 
   var fuse = new Fuse(denormalized, { keys: ['concatPeople'] });
 
-  $('#rsvp-lookup').click(function() {
-    var attendee = $('#rsvp-name').val();
+  $('#rsvp-lookup').click(() => launchRSVPModal(fuse));
+  $('#rsvp-name').enter(() => launchRSVPModal(fuse));
+}
 
-    var matchingInvitees = fuse.search(attendee);
+jQuery.fn.enter = function(callback) {
+  var self = $(this[0]);
 
-    if (matchingInvitees < 1) {
-      console.log('error');
-      // TODO: display error message
-      return;
+  self.keypress(function(e) {
+    if (e.which == 13) {
+      callback();
+      return false;
     }
-
-    ReactDOM.render(
-      React.createElement(RSVPModal, { attendee: matchingInvitees[0] }),
-      document.getElementById('rsvp-modal-body')
-    );
-
-    $('#rsvp-modal').modal();
   });
+};
+
+function launchRSVPModal(fuse) {
+  var attendee = $('#rsvp-name').val();
+
+  var matchingInvitees = fuse.search(attendee);
+
+  if (matchingInvitees < 1) {
+    console.log('error');
+    // TODO: display error message
+    return;
+  }
+
+  ReactDOM.render(
+    React.createElement(RSVPModal, { attendee: matchingInvitees[0] }),
+    document.getElementById('rsvp-modal-body')
+  );
+
+  $('#rsvp-modal').modal();
 }
