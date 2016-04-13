@@ -15,6 +15,15 @@ export default class RSVPModal extends React.Component {
     }));
   }
 
+  componentWillReceiveProps(nextProps) {
+    this.state.people = nextProps.attendee.people.map((person) => ({
+      name: person,
+      status: 'Unknown'
+    }));
+
+    this.setState(this.state);
+  }
+
   toggleStatus(index) {
     var person = this.state.people[index];
 
