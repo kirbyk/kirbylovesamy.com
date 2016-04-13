@@ -45,7 +45,7 @@ function initPhotoGallery() {
 function onThumbnailClick(e) {
   e.preventDefault();
 
-  var index = parseInt($(e.target.parentNode).data('index'), 10);
+  var index = parseInt($(e.target.parentNode).data('index'), 10) - 1;
 
   openPhotoSwipe(index);
 
