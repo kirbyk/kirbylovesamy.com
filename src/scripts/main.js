@@ -79,7 +79,13 @@ function openPhotoSwipe(index) {
 }
 
 function registerRSVP() {
-  var fuse = new Fuse(invitees, { keys: ['people'] });
+  var denormalized = invitees.map((invitee) => ({
+    formatted: invitee.formatted,
+    people: invitee.people,
+    concatPeople: invitee.people.join(' ')
+  }));
+
+  var fuse = new Fuse(denormalized, { keys: ['concatPeople'] });
 
   $('#rsvp-lookup').click(function() {
     var attendee = $('#rsvp-name').val();
