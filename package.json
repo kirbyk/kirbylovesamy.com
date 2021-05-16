@@ -22,7 +22,7 @@
     "bootstrap": "^3.3.6",
     "fuse.js": "^2.2.0",
     "gulp": "^3.9.0",
-    "gulp-bower": "0.0.11",
+    "gulp-bower": "0.0.15",
     "gulp-sass": "^2.1.0",
     "jquery": "^2.2.3",
     "node-bourbon": "^4.2.3",
