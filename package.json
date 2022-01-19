@@ -29,8 +29,8 @@
     "node-neat": "^1.7.2",
     "node-normalize-scss": "^1.0.3",
     "photoswipe": "^4.1.1",
-    "react": "^15.0.1",
-    "react-dom": "^15.0.1"
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0"
   },
   "devDependencies": {
     "babel-core": "^6.7.6",
