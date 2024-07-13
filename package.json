@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/kirbyk/kirbylovesamy.com#readme",
   "dependencies": {
-    "bootstrap": "^3.3.6",
+    "bootstrap": "^5.0.0",
     "fuse.js": "^2.2.0",
     "gulp": "^3.9.0",
     "gulp-bower": "0.0.11",
