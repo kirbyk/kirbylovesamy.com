@@ -23,7 +23,7 @@
     "fuse.js": "^2.2.0",
     "gulp": "^3.9.0",
     "gulp-bower": "0.0.11",
-    "gulp-sass": "^2.1.0",
+    "gulp-sass": "^5.0.0",
     "jquery": "^2.2.3",
     "node-bourbon": "^4.2.3",
     "node-neat": "^1.7.2",
